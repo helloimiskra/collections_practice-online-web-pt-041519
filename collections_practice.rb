@@ -43,5 +43,9 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.[1,2].each_with_index.collect{|element, index| }
+  new_array = []
+  array.each do |noun| 
+    new_array << "#{noun}s"
+  end
+  new_array.map! {|nouns| nouns == "feets" ? "feet" : nouns }
 end

@@ -47,8 +47,8 @@ def add_s(array)
   array.map do |noun|
     if noun == feet
       "feet"
-    else    
-    new_array << "#{noun}s"
+    else new_array << "#{noun}s"
+    end
   end
   new_array
 end

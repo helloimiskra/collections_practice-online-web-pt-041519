@@ -44,5 +44,8 @@ end
 
 def add_s(array)
   new_array = []
-  [1,2].each_with_index.collect{|element, index| puts "#{element}s"}
+  array.each do |noun|
+    new_array << "#{noun}s"
+  end
+  new_array
 end

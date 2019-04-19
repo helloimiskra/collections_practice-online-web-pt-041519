@@ -44,9 +44,7 @@ end
 
 def add_s(array)
   new_array = []
-  array.each do |word|
-    word.include?("feet")
-    new_array << "#{word}s"
+  [1,2].each_with_index.collect{|element, index| puts "#{element}s"}
   end
   new_array
 end

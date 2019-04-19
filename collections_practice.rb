@@ -44,7 +44,7 @@ end
 
 def add_s(array)
   new_array = []
-  array.each do |noun| 
+  array.each do |noun|
     new_array << "#{noun}s"
   end
   new_array.map! {|nouns| nouns == "feets" ? "feet" : nouns }
